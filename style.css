@@ -38,25 +38,70 @@ body {
 /* service-1 */
 .service-1 {
   display: flex;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 480px) {
+  .service-1 {
+    display: block;
+  }
 }
 .service-1-content {
-  padding: 20px;
+  width: calc(100% / 3);
+  height: calc(100vw / 3 * 1.2);
+  min-height: 500px;
+  background-size: cover;
+  background-position: center center;
   background-color: #4a4a4a;
   color: #fff;
 }
-.service-1-content-title {
-  font-size: 2rem;
+@media screen and (max-width: 480px) {
+  .service-1-content {
+    width: 100vw;
+    height: calc(100vw * 1.3);
+    min-height: 520px;
+  }
 }
+.service-1-content:nth-child(1) {
+  background-image: url(imges/bg_service01.jpg);
+}
+.service-1-content:nth-child(2) {
+  background-image: url(imges/bg_service02.jpg);
+}
+.service-1-content:nth-child(3) {
+  background-image: url(imges/bg_service03.jpg);
+}
+.service-1-content-title {
+  padding: 50px 3vw 15px;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.6;
+  text-align-last: left;
+}
+@media screen and (max-width: 480px) {
+  .service-1-content-title {
+    padding: 35px 6vw 15px;
+  }
+}
+
 .service-1-content-text {
+  max-width: 370px;
+  padding: 0 3vw;
+  line-height: 1.6;
+  text-align-last: left;
+}
+@media screen and (max-width: 480px) {
+  .service-1-content-text {
+    padding: 0 6vw;
+  }
 }
 
 /* --volume & description --*/
-.aaa {
+.volume-and-schedule {
   display: flex;
   flex-wrap: nowrap;
 }
 @media screen and (max-width: 480px) {
-  .aaa {
+  .volume-and-schedule {
     display: block;
   }
 }
@@ -234,18 +279,141 @@ body {
 
 /* vace */
 .vace {
+  background: #e8e3df;
+}
+.vace-area {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 90px 0 160px;
+}
+@media screen and (max-width: 480px) {
+  .vace-area {
+    padding: 75px 5% 60px;
+  }
+}
+.vace-bgimg-area {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .vace-bgimg-area {
+    top: 160px;
+    right: 0;
+    left: 0;
+    width: unset;
+    overflow: hidden;
+  }
+}
+.vace-bgimg {
+  width: 100%;
+}
+.vace-content-area {
+  width: 40%;
   text-align: center;
+  margin-left: 40px;
+}
+@media screen and (max-width: 480px) {
+  .vace-content-area {
+    width: unset;
+    margin-left: 0;
+  }
 }
 .vace-content {
+  display: inline-block;
   position: relative;
+  width: 400px;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .vace-content {
+    width: unset;
+  }
 }
 .vace-title {
+  font-size: 2.6rem;
+  line-height: 1.6;
+  font-weight: normal;
+}
+@media screen and (max-width: 480px) {
+  .vace-title {
+    font-size: 2.2rem;
+  }
 }
 .vace-caption {
+  display: inline-block;
   background: #fff;
+  padding: 5px 10px;
+  margin: 30px 0;
+}
+@media screen and (max-width: 480px) {
+  .vace-caption {
+    font-size: 1.4rem;
+    margin: 20px 0 130%;
+  }
+}
+.vace-price-area {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 480px) {
+  .vace-price-area {
+    margin-bottom: 20px;
+  }
+}
+.vace-firstPrice-text {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  text-align: center;
+  border: 2px solid #3e444a;
+  padding: 5px 10px;
+}
+@media screen and (max-width: 480px) {
+  .vace-firstPrice-text {
+    padding: 5px 2px;
+  }
+}
+.vace-firstPrice {
+  font-size: 1.8rem;
+  text-align-last: left;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 480px) {
+  .vace-firstPrice {
+    padding-left: 16px;
+  }
+}
+.vace-nomalPrice {
+  font-size: 1.4rem;
+  text-align-last: left;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 480px) {
+  .vace-nomalPrice {
+    padding-left: 16px;
+  }
+}
+.vace-text {
+  text-align: left;
+  line-height: 1.6;
 }
 .vace-imgArea {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.vace-img-item {
+  position: relative;
+}
+.vace-img-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
 }
 .vace-priceArea {
 }
@@ -256,7 +424,6 @@ body {
   margin: 0 auto;
   padding-top: 90px;
   text-align: center;
-  border: 1px solid #000;
 }
 @media screen and (max-width: 480px) {
   .service-2 {
