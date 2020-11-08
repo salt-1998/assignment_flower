@@ -24,7 +24,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .first-view {
-  background-image: url(imges/bg_header_pink_sp.jpg);
+    background-image: url(imges/bg_header_pink_sp.jpg);
     padding: 21% 0 13%;
     min-height: 540px;
   }
@@ -32,6 +32,7 @@ body {
 .main-text {
   padding: 30px 0 172px;
   font-size: 2rem;
+  font-weight: normal;
   line-height: 1.75;
 }
 @media screen and (max-width: 480px) {
@@ -440,8 +441,6 @@ body {
   left: 0;
   right: 0;
   bottom: 10px;
-}
-.vace-priceArea {
 }
 
 /* service-2 */
