@@ -11,20 +11,42 @@ body {
 
 /* first-view */
 .first-view {
+  /* position: relative; */
   background-image: url(imges/bg_top_pink.jpg);
+  background-position: 50% 50%;
   background-size: cover;
-  padding: 235px 0 37px;
+  /* min-height: calc(100vw * 0.56); */
+  min-height: 520px;
+  padding: 17% 0 3%;
   color: #fff;
   text-align: center;
   background-color: #000;
+}
+@media screen and (max-width: 480px) {
+  .first-view {
+  background-image: url(imges/bg_header_pink_sp.jpg);
+    padding: 21% 0 13%;
+    min-height: 540px;
+  }
 }
 .main-text {
   padding: 30px 0 172px;
   font-size: 2rem;
   line-height: 1.75;
 }
+@media screen and (max-width: 480px) {
+  .main-text {
+    font-size: 1.8rem;
+    padding: 26px 0 355px;
+  }
+}
 .app-button-area {
   padding-bottom: 50px;
+}
+@media screen and (max-width: 480px) {
+  .app-button-area {
+    display: none;
+  }
 }
 .appButton-img {
   display: inline-block;
@@ -32,7 +54,11 @@ body {
 .attention {
   font-size: 1.4rem;
   padding-bottom: 10px;
-  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .attention {
+    font-size: 1.3rem;
+  }
 }
 
 /* service-1 */
