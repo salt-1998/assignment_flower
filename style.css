@@ -11,16 +11,14 @@ body {
 
 /* first-view */
 .first-view {
-  /* position: relative; */
   background-image: url(imges/bg_top_pink.jpg);
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
   /* min-height: calc(100vw * 0.56); */
   min-height: 520px;
   padding: 17% 0 3%;
   color: #fff;
   text-align: center;
-  background-color: #000;
 }
 @media screen and (max-width: 480px) {
   .first-view {
@@ -51,6 +49,7 @@ body {
 }
 .appButton-img {
   display: inline-block;
+  padding: 0 7px;
 }
 .attention {
   font-size: 1.4rem;
@@ -77,8 +76,7 @@ body {
   height: calc(100vw / 3 * 1.2);
   min-height: 500px;
   background-size: cover;
-  background-position: center center;
-  background-color: #4a4a4a;
+  background-position: center;
   color: #fff;
 }
 @media screen and (max-width: 480px) {
@@ -102,7 +100,7 @@ body {
   font-size: 2rem;
   font-weight: normal;
   line-height: 1.6;
-  text-align-last: left;
+  text-align: left;
 }
 @media screen and (max-width: 480px) {
   .service-1-content-title {
@@ -114,7 +112,7 @@ body {
   max-width: 370px;
   padding: 0 3vw;
   line-height: 1.6;
-  text-align-last: left;
+  text-align: left;
 }
 @media screen and (max-width: 480px) {
   .service-1-content-text {
@@ -168,6 +166,7 @@ body {
 }
 .plan-content {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -233,7 +232,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 140px 3%;
-
   text-align: right;
 }
 @media screen and (max-width: 480px) {
@@ -253,7 +251,6 @@ body {
 }
 @media screen and (max-width: 480px) {
   .description-img-area {
-    position: absolute;
     top: 80px;
     left: 0;
     right: 0;
@@ -331,7 +328,6 @@ body {
     right: 0;
     left: 0;
     width: unset;
-    overflow: hidden;
   }
 }
 .vace-bgimg {
@@ -349,10 +345,9 @@ body {
   }
 }
 .vace-content {
-  display: inline-block;
   position: relative;
   width: 400px;
-  text-align: center;
+  margin: 0 auto;
 }
 @media screen and (max-width: 480px) {
   .vace-content {
@@ -517,7 +512,6 @@ body {
 .download-content {
   display: inline-block;
   position: relative;
-  z-index: 10;
   width: 255px;
   text-align: center;
   padding-top: 60px;
@@ -537,7 +531,7 @@ body {
   bottom: 0;
   left: 50%;
   margin-left: -400px;
-  z-index: 0;
+  vertical-align: bottom;
 }
 @media screen and (max-width: 480px) {
   .download-bgimg {
@@ -622,11 +616,15 @@ body {
 }
 @media screen and (max-width: 480px) {
   .footer-app {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    padding: 22px 7px;
-    background-color: #fbfbfb;
+    padding: 22px 8px;
+    background-color: rgba(251, 251, 251, 0.8);
     text-align: center;
   }
 }

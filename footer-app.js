@@ -1,0 +1,1 @@
+const height = document.getElementById('js-footer-app').offsetHeight
